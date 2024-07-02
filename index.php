@@ -24,18 +24,16 @@ if (isset($_POST['daftar'])) {
 
 <!-- Start Form-pendaftaran -->
 <section class="form-pendaftaran margin-bottom-100">
-
     <div class="container">
         <div class="row">
-
-            <form action="" method="post">
-                <h3>Form Pendaftaran</h3>
+            <form action="" method="post" enctype="multipart/form-data">
+                <h3>Formulir Pendaftaran Calon Siswa baru SMPIT Anak Sholeh Mataram TA 2025/2026</h3>
                 <hr>
                 <div class="col-md-12">
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Nama Lengkap *</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" required name="nama" placeholder="Contoh: Fulan bin Fulan">
+                            <input type=" text" class="form-control" required name="nama" placeholder="Contoh: Fulan bin Fulan">
                         </div>
                     </div>
 
@@ -159,6 +157,13 @@ if (isset($_POST['daftar'])) {
                         <label class="col-sm-2 control-label">Pekerjaan Wali</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" name="pekerjaanwali" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="mb-3 form-group">
+                        <label for="formFile" class="form-label col-sm-2">Upload Bukti Pembayaran Pendaftaran</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="file" id="formFile" name="foto">
                         </div>
                     </div>
 
